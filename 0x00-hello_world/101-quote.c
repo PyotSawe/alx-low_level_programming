@@ -7,8 +7,9 @@
  */
 int main(void)
 {
-	/*const int SYS_ERR = 2;*/
-	/*const int MAX_BYTES = 59;*/
+	const int SYS_ERR = 2;
+	const int MAX_BYTES = 59;
+
 	write(SYS_ERR,
 	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", MAX_BYTES);
 	return (1);
