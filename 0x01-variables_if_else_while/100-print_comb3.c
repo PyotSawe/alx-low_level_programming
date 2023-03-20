@@ -1,20 +1,21 @@
 #include <stdio.h>
 /**
- *main - Entry point, print 00 to 99 using putchar
+ *main - print 00 to 99 with no duplicate digits or combos: no 11, no 10 (01)
+ *
  *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int part_a;
-	int part_b;
+	int ones_digit;
+	int tens_digit;
 
-	for (part_a = '0'; part_a <= '9'; part_a++)
+	for (tens_digit = '0'; tens_digit <= '9'; tens_digit++)
 	{
-		for (part_b = '0'; part_b <= '9'; part_b++)
+		for (ones_digit = (tens_digit + 1); ones_digit <= '9'; ones_digit++)
 		{
-			putchar(part_a);
-			putchar(part_b);
-			if (!(part_a == '9' && part_b == '9'))
+			putchar(tens_digit);
+			putchar(ones_digit);
+			if (tens_digit != '8' || ones_digit != '9')
 			{
 				putchar(',');
 				putchar(' ');
