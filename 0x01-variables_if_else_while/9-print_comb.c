@@ -17,5 +17,6 @@ int main(void)
 		}
 		part++;
 	}
+	putchar('\n');
 	return (0);
 }
