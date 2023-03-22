@@ -1,8 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
- * _putchar - writes the given string 
- * @chr: The char to 
+ *_putchar - writes the given string
+ * @chr: The char to
  *
  * Return: On success ONE.
  * On error, -1 is returned.
@@ -37,13 +37,13 @@ int _isalpha(int c);
 int print_sign(int n);
 /**
  * _abs - computer absolute value of integer
- * @int: integer
+ * @num: integer to calculate for absolute value
  * Return: absolute value
  */
 int _abs(int num);
 /**
  * print_last_digit - print last digit of integer
- * @int: integer
+ * @int: integer parameter to check for last digit
  * Return: last digit of number
  */
 int print_last_digit(int);
@@ -62,7 +62,7 @@ void times_table(void);
  * @b: second integer
  * Return: sum of the to
  */
-int add(int, int);
+int add(int a, int b);
 /**
  * print_to_98 - print numbers n to 98
  * @n: integer argument to start ith
