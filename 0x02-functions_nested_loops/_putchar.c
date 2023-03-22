@@ -1,17 +1,13 @@
-#include "main.h"
-#include <stdio.h>
+#include <unistd.h>
+/*#include <stdio.h>*/
 /**
- *main - print lowercase a-z
- *Return: Always 0 (Success)
+ * _putchar - writes the character c to STDOUT
+ * @c: The character to print
+ *
+ * Return: On success 1
+ * On error, -1 is returned
  */
-int main(void)
+int _putchar(char chr)
 {
-	char msg[10] = {'_', 'p', 'u', 'c', 'h', 'a', 'r', '\n'};
-	short index;
-
-	for (index = 0; index <= 10; ++index)
-	{
-		_putchar(msg[index]);
-	}
-	return (0);
+	return (write(1, &chr, 1));
 }
