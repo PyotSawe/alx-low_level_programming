@@ -2,7 +2,7 @@
 
 /**
  * _abs - computer absolute value of integer
- * @int: integer
+ * @num: num is to find abs
  * Return: absolute value
  */
 
