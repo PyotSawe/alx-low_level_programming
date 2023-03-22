@@ -8,5 +8,5 @@
 
 int _isalpha(int c)
 {
-	return ((_islower(c) || (c >= 'A' && c <= 'Z')) ? 1 : 0);
+	return ((((c >= 'a' && c <= 'z') ? 1 : 0) || (c >= 'A' && c <= 'Z')) ? 1 : 0);
 }
