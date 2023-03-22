@@ -2,7 +2,7 @@
 
 /**
  *
- * A function to print all alphabets
+ * print_alphabet - A function to print all alphabets
  */
 
 void print_alphabet(void)
