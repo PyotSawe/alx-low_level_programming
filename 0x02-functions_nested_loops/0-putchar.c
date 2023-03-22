@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	char msg[10] = {'_', 'p', 'u', 'c', 'h', 'a', 'r'};
+	char msg[8] = {'_', 'p', 'u', 'c', 'h', 'a', 'r'};
 	short index;
 
-	for (index = 0; index <= 9; ++index)
+	for (index = 0; index <= 8; ++index)
 	{
 		_putchar(msg[index]);
 	}
