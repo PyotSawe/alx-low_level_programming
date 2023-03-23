@@ -4,7 +4,7 @@
  * times_table - print multiplication table
  */
 
-voiid times_table(void)
+void times_table(void)
 {
 	int x;
 	int y;
