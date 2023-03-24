@@ -5,7 +5,7 @@
 * OS: Ubuntu 20.04 LTS
 * Compiler: gcc
 * Gcc Options: -Wall -Werror -Wextra -pedantic -std=gnu89
-
+* Style guidelines: [Betty style] (https://github.com/holbertonschool/Betty/wiki)
 ## Synopsis
 This repository holds some projects I worked on for alx-cohort-13  The goal was to learn More about C Functions, Nested Functions And Function prototypes
 
@@ -36,6 +36,9 @@ This repository holds some projects I worked on for alx-cohort-13  The goal was 
 11. a program that finds and prints the largest prime factor of the number 612852475143
 12. a function that prints an integer
 
-##Authors
-* Pyot J. Sawe
+## Testing unit
+Every implementation files as tested by .gitignored Test units. Not uploaded
+
+## Authors
+Pyot J. Sawe
 

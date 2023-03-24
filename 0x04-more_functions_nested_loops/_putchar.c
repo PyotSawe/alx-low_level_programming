@@ -1,10 +1,11 @@
-#include <main.h>
 #include <unistd.h>
 
 /**
- * _putchar: Prints given character on stdout
- * @chr: character to write to fd
- * Return: 1 if no error othewise, 0
+ * _putchar - writes the character c to STDOUT
+ * @chr: The character to write
+ *
+ * Return: On success 1
+ * On error, -1 is returned
  */
 
 int _putchar(char chr)
