@@ -14,8 +14,8 @@ int _strlen(char *s)
 	int length = 0;
 
 	/*Don't calculate if s points to '\0'*/
-	if (*s == '\0)
-		return length;
+	if (*s == '\0')
+		return (length);
 	/*When s is not pointing at '\0'*/
 	/* it means the str is present and you can calculate it*/
 	else
