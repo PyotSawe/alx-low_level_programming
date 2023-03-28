@@ -12,7 +12,7 @@ int _atoi(char *s)
 {
 	int head_sign = 1;
 	int i = 0;
-	int converted = 0;
+	unsigned int converted = 0;
 
 	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
 	{
