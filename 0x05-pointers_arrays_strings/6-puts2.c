@@ -7,10 +7,17 @@
 
 void puts2(char *str)
 {
-	while (*str != '\0')
+	int char_pos = 0;
+
+	while (char_pos >= 0)
 	{
-		_putchar(*str);
-		str += 2;
+		if (str[char_pos] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		if (char_pos % 2 == 0)
+			_putchar(str[char_pos]);
+		char_pos++;
 	}
-	_putchar('\n');
 }
