@@ -9,7 +9,7 @@ char *rot13(char *msg)
 	int msg_i = 0;
 
 	/*Repeat getting a character from str until encounter null characters*/
-	while (*(msg + msg_i))
+	while (*(msg + msg_i) != '\0')
 	{
 		/*Repeat checking the character*/
 		while ((*(msg + msg_i) >= 'a' && *(msg + msg_i) <= 'z') ||
