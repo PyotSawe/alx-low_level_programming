@@ -14,7 +14,8 @@ int _strcmp(char *s1, char *s2)
 	while (*(s1 + shared_index) != '\0')
 	{
 		/*If their characters at this index are not same*/
-		if (*(s1 + shared_index) != *(s2 + shared_index))/*Then return their differences*/
+		if (*(s1 + shared_index) != *(s2 + shared_index))
+			/*Then return their differences*/
 			return (*(s1 + shared_index) - *(s2 + shared_index));
 		/*Move to next character*/
 		shared_index++;
