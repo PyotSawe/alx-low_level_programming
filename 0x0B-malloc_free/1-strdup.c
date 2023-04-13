@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	/* OS can encounter exceptions */
 	if (new == NULL)
 		return (NULL);
-	/* Duplicate*/
+	/* Duplicate the strs*/
 	while ((new[str_i] = str[str_i]) != '\0')
 		str_i++;
 	return (new);
