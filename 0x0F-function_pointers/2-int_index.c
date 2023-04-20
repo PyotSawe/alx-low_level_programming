@@ -11,20 +11,18 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0;
-	/* Don't trust the caller */
-	if (array != NULL && cmp != NULL)
+	int a_i = 0;
+
+	if (size <= 0)
+		return (-1);
+	if (array == NULL || cmp == NULL)
+		return (-1);
+	while (a_i < size)
 	{
-		/* Handle args exceptions */
-		if (size <= 0)
-			return (-1);
-		/* process the array searching for integer */
-		for (; i < size; ++i)
-		{
-			/* Check if matched searched int */
-			if (cmp(*(array + i)))
-				return (i);
-		}
+		/* Use stdlib */
+		if (cmp(*(array + a_i)))
+			return (a_i);
+		a_i++;
 	}
-	return (-1)
+	return (-1);
 }
