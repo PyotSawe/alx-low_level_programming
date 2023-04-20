@@ -18,19 +18,19 @@ int main(int argc, char const *argv[])
 	{
 		if (argc > 2)
 		{
-			printf("Error: Command Options MORE than 2\n");
+			printf("Error\n");
 			exit(1);
 		}
 		else if (argc < 2)
 		{
-			printf("Error: Command Options LESS than 2\n");
+			printf("Error\n");
 			exit(1);
 		}
 	}
 	code_len = atoi(argv[1]);
 	if (code_len < 0)
 	{
-		printf("Error: Bytes should be more than 0\n");
+		printf("Error\n");
 		exit(2);
 	}
 	for (code_off = 0; code_off < code_len; code_off++)
