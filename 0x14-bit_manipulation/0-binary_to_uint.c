@@ -1,4 +1,23 @@
 #include "main.h"
+#include <stddef.h>
+
+/**
+  * _strlen - Returns the length of a string
+  * @s: String to count
+  *
+  * Return: String length
+  */
+int _strlen(const char *s)
+{
+	int c = 0;
+
+	while (s[c])
+		c++;
+
+	return (c);
+}
+
+
 /**
 * binary_to_uint - convert str to bin representation
 * @b: name of what to convert
@@ -6,19 +25,22 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int b_i = 0;/* index of every char*/
-	unsigned int base = 0;
+	unsigned int len = 0, finished = 0, result = 0;
 
-	if (b == NULL)/* do nothing when b empty*/
+	if (b == NULL)
 		return (0);
-	while (*(b + b_i) != '\0')/*Process every bit*/
+
+	len = _strlen(b);
+	while (len--)
 	{
-		if (*(b + b_i) != '0' && *(b + b_i) != '1')
+		if (b[len] != 48 && b[len] != 49)
 			return (0);
-		base <<= 1;/*Otherwise left shift rotate*/
-		if (*(b + b_i) == '1')
-			base ^= 1;
-		b_i++;
+
+		if (b[len] == 49)
+			result += 1 << finished;
+
+		finished++;
 	}
-	return (base);
+
+	return (result);
 }
