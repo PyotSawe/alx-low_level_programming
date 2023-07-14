@@ -16,7 +16,6 @@
  *
  * Description: If the file is not an ELF file - exit code 98.
  */
-
 void check_elf(unsigned char *e_ident)
 {
 	int index;
