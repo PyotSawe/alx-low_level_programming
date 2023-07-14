@@ -5,7 +5,6 @@
  * @letters: letters
  * Return: 1 if cannot be oppened or read 0, if is NULL 0, if writes fail 0
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fdecr; /* File decriptor index */
