@@ -6,7 +6,6 @@
  * @fdread: read
  * @fdwrite: write
  */
-
 void close_w(int fdread, int fdwrite)
 {
 	if (close(fdwrite) == -1)/*Close the file and if errors report*/
