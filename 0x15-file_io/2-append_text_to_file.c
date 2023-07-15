@@ -6,6 +6,7 @@
  * @text_content: ptr of char
  * Return: -1 if NULL in FN, 1 on sucess
  */
+
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fdecr, final_out, file_off = 0;
