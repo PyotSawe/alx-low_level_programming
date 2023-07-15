@@ -1,5 +1,5 @@
 /**
- *Auth: Based on Brennan D Baraban work
+ *Auth: Based on Brennan D Baraban works on the project
  */
 
 #include <elf.h>
