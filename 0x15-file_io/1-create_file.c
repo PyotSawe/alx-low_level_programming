@@ -6,6 +6,7 @@
  * @text_content: msg_content
  * Return: -1 if NULL in FN, 1 on sucess
  */
+
 int create_file(const char *filename, char *text_content)
 {
 	int final_out = 0;
