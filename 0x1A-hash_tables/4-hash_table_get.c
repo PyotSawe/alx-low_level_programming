@@ -4,7 +4,7 @@
 #include "hash_tables.h"
 
 /**
-  * hash_table_get - Retrieves a value associated with a key(Read part of table)
+  * hash_table_get - Retrieves a key(Read part of table)
   * @ht: The hash table to look into
   * @key: The key to finding
   *
