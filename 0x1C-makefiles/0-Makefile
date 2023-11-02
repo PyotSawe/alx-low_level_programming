@@ -1,0 +1,2 @@
+all: main.c x.c 
+	gcc main.c x.c -o x
